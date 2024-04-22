@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/normal_100">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeable_iv_offer"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pic_offer_2"
+        app:shapeAppearanceOverlay="@style/OfferImage" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_100"
+        android:textAppearance="@style/Title2"
+        tools:text="Die Antwoord" />
+
+    <TextView
+        android:id="@+id/tv_town"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_50"
+        android:textAppearance="@style/Text1"
+        tools:text="Будапешт" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_50">
+
+        <ImageView
+            android:layout_width="@dimen/icon_width_height"
+            android:layout_height="@dimen/icon_width_height"
+            android:src="@drawable/ic_plane" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text1"
+            tools:text="от 22 264 Р" />
+
+    </LinearLayout>
+
+</LinearLayout>

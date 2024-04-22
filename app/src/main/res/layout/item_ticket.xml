@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/normal_100">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_100"
+        android:layout_marginTop="@dimen/normal_100"
+        android:background="@drawable/bg_item_ticket"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_100"
+            android:text="7 386 ₽"
+            android:textAppearance="@style/Title1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_rectangle"
+            android:layout_width="@dimen/icon_width_height"
+            android:layout_height="@dimen/icon_width_height"
+            android:src="@drawable/ic_rectangle"
+            app:layout_constraintBottom_toBottomOf="@id/tv_dme"
+            app:layout_constraintStart_toStartOf="@id/tv_price"
+            app:layout_constraintTop_toTopOf="@id/tv_time" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_100"
+            android:text="12:00 - 15:35"
+            android:textAppearance="@style/Title4"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/iv_rectangle"
+            app:layout_constraintTop_toBottomOf="@id/tv_price" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_100"
+            android:text="3.5ч в пути / Без пересадок"
+            android:textAppearance="@style/Text2"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tv_time"
+            app:layout_constraintStart_toEndOf="@id/tv_time"
+            app:layout_constraintTop_toTopOf="@id/tv_time" />
+
+        <TextView
+            android:id="@+id/tv_dme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_50"
+            android:text="DME"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/normal_100"
+            android:textAppearance="@style/Title4"
+            android:textColor="@color/grey_6"
+            app:layout_constraintStart_toStartOf="@id/tv_time"
+            app:layout_constraintTop_toBottomOf="@id/tv_time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_100"
+            android:text="AER"
+            android:textAppearance="@style/Title4"
+            android:textColor="@color/grey_6"
+            app:layout_constraintBottom_toBottomOf="@id/tv_dme"
+            app:layout_constraintStart_toEndOf="@id/tv_dme"
+            app:layout_constraintTop_toTopOf="@id/tv_dme" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_additional_details_of_ticket"
+        android:backgroundTint="@color/blue"
+        android:paddingHorizontal="@dimen/small_125"
+        android:paddingVertical="2dp"
+        android:text="Прилет вечером"
+        android:textAppearance="@style/Title4"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/layout_ticket"
+        app:layout_constraintStart_toStartOf="@id/layout_ticket"
+        app:layout_constraintTop_toTopOf="@id/layout_ticket" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

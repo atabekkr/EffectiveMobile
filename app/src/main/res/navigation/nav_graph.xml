@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.karsoft.effectivemobile.presenter.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_allTicketsFragment"
+            app:destination="@id/allTicketsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_plugFragment"
+            app:destination="@id/plugFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelsFragment"
+        android:name="com.karsoft.effectivemobile.presenter.ui.hotels.HotelsFragment"
+        android:label="fragment_hotels"
+        tools:layout="@layout/fragment_hotels" />
+    <fragment
+        android:id="@+id/shortDistanceFragment"
+        android:name="com.karsoft.effectivemobile.presenter.ui.shortdistance.ShortDistanceFragment"
+        android:label="fragment_short_distance"
+        tools:layout="@layout/fragment_short_distance" />
+    <fragment
+        android:id="@+id/subscribesFragment"
+        android:name="com.karsoft.effectivemobile.presenter.ui.subscribes.SubscribesFragment"
+        android:label="fragment_subscribes"
+        tools:layout="@layout/fragment_subscribes" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.karsoft.effectivemobile.presenter.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/allTicketsFragment"
+        android:name="com.karsoft.effectivemobile.presenter.ui.alltickets.AllTicketsFragment"
+        android:label="fragment_all_tickets"
+        tools:layout="@layout/fragment_all_tickets" />
+    <fragment
+        android:id="@+id/plugFragment"
+        android:name="com.karsoft.effectivemobile.presenter.ui.plug.PlugFragment"
+        android:label="fragment_plug"
+        tools:layout="@layout/fragment_plug" />
+</navigation>

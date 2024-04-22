@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Effective Mobile</string>
+    <string name="avia_tickets">Авиабилеты</string>
+    <string name="hotels">Отели</string>
+    <string name="short_distance">Кароче</string>
+    <string name="subscribes">Подписки</string>
+    <string name="profile">Профиль</string>
+    <string name="search_chip_tickets">Поиск дешевых \nавиабилетов</string>
+    <string name="fly_musically">Музыкально отлететь</string>
+    <string name="hint_to_where">Куда - Турция</string>
+    <string name="hint_from_where">Откуда-Москва</string>
+    <string name="popular_commute">Популярное направление</string>
+    <string name="sochi">Сочи</string>
+    <string name="phuket">Пхукет</string>
+    <string name="stambul">Стамбул</string>
+    <string name="dif_route">Сложный маршрут</string>
+    <string name="anywhere">Куда угодно</string>
+    <string name="weekend">Выходные</string>
+    <string name="hot_tickets">Горячие билеты</string>
+    <string name="straight_rails">Прямые рельсы</string>
+    <string name="show_all">Показать все</string>
+    <string name="price_in_rubl">2 390 ₽</string>
+    <string name="filter">фильтр</string>
+    <string name="nothing_to_show">Nothing to show!</string>
 </resources>

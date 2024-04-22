@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/normal_100"
+    tools:context=".presenter.ui.alltickets.AllTicketsFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_100"
+        android:background="@color/grey_2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/icon_width_height"
+            android:layout_height="@dimen/icon_width_height"
+            android:layout_marginVertical="@dimen/normal_100"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_back"
+            app:tint="@color/blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_100"
+            android:layout_marginStart="@dimen/small_100"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Москва-Сочи"
+                android:textAppearance="@style/Title3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23 февраля, 1 пассажир"
+                android:textAppearance="@style/Title4"
+                android:textColor="@color/grey_6" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:listitem="@layout/item_ticket" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_additional_details_of_ticket"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/normal_100"
+            android:layout_height="@dimen/normal_100"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/normal_125"
+            android:src="@drawable/ic_filter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_125"
+            android:layout_marginStart="@dimen/small_50"
+            android:text="Фильтр"
+            android:textAppearance="@style/Title4"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="@dimen/normal_100"
+            android:layout_height="@dimen/normal_100"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/normal_100"
+            android:src="@drawable/ic_graph" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/small_50"
+            android:layout_marginEnd="@dimen/small_125"
+            android:text="График цен"
+            android:textAppearance="@style/Title4"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".presenter.ui.plug.PlugFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic_buble_gum_woman" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_sfpro_semibold_italic"
+        android:text="@string/nothing_to_show"
+        android:textAppearance="@style/Title1" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/standard_icon_width_height"
+        android:layout_height="@dimen/standard_icon_width_height"
+        android:layout_marginTop="@dimen/normal_100"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_back" />
+
+
+</LinearLayout>
