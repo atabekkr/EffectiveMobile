@@ -2,8 +2,10 @@ package com.karsoft.effectivemobile.di
 
 import com.karsoft.effectivemobile.data.repository.OfferRepositoryImpl
 import com.karsoft.effectivemobile.data.repository.TicketOfferRepositoryImpl
+import com.karsoft.effectivemobile.data.repository.TicketRepositoryImpl
 import com.karsoft.effectivemobile.domain.repository.OfferRepository
 import com.karsoft.effectivemobile.domain.repository.TicketOfferRepository
+import com.karsoft.effectivemobile.domain.repository.TicketRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -21,4 +23,9 @@ interface RepositoryModule {
     fun bindTicketOfferRepository(
         repository: TicketOfferRepositoryImpl,
     ): TicketOfferRepository
+
+    @Binds
+    fun bindTicketRepository(
+        repository: TicketRepositoryImpl,
+    ): TicketRepository
 }

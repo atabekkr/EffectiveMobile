@@ -41,7 +41,11 @@
         android:id="@+id/allTicketsFragment"
         android:name="com.karsoft.effectivemobile.presenter.ui.alltickets.AllTicketsFragment"
         android:label="fragment_all_tickets"
-        tools:layout="@layout/fragment_all_tickets" />
+        tools:layout="@layout/fragment_all_tickets" >
+        <argument
+            android:name="arrivalTown"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/plugFragment"
         android:name="com.karsoft.effectivemobile.presenter.ui.plug.PlugFragment"

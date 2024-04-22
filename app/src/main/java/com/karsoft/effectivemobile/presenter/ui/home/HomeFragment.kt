@@ -89,7 +89,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.btnShowAllTickets.setOnClickListener {
             findNavController().navigate(
-                HomeFragmentDirections.actionHomeFragmentToAllTicketsFragment()
+                HomeFragmentDirections.actionHomeFragmentToAllTicketsFragment(binding.etWhereSecondScreen.text.toString())
             )
         }
 

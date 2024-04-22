@@ -32,17 +32,19 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_towns"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Москва-Сочи"
-                android:textAppearance="@style/Title3" />
+                android:textAppearance="@style/Title3"
+                tools:text="Москва-Сочи" />
 
             <TextView
+                android:id="@+id/tv_current_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="23 февраля, 1 пассажир"
                 android:textAppearance="@style/Title4"
-                android:textColor="@color/grey_6" />
+                android:textColor="@color/grey_6"
+                tools:text="23 февраля, 1 пассажир" />
 
 
         </LinearLayout>
